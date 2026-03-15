@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>跳一跳 APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="top-bar">
+        <h1>跳一跳</h1>
+        <p class="tip">长按屏幕蓄力，松开起跳，落在方块上即可得分。</p>
+      </header>
+
+      <section class="hud">
+        <div>得分：<span id="score">0</span></div>
+        <button id="restartBtn" type="button">重新开始</button>
+      </section>
+
+      <canvas id="gameCanvas" width="420" height="620" aria-label="跳一跳游戏画布"></canvas>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
